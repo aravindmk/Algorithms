@@ -1,10 +1,10 @@
 ## Selection sort/Assertion sort
 
-s=eval(input()) #Taking the unsorted list as input from user
-for i in range(len(s)):
+lst=eval(input()) #Taking the unsorted list as input from user
+for i in range(len(lst)):
     a=i #Temporarily storing the index of the number in a variable
-    for j in range(i+1,len(s)):
-        if s[j]<s[a]:   #Checking if the number is less than every number succeeding it
+    for j in range(i+1,len(lst)):
+        if lst[j]<lst[a]:   #Checking if the number is less than every number succeeding it
             a=j
-    s[i],s[a]=s[a],s[i]
-print(s)
+    lst[i],lst[a]=lst[a],lst[i]
+print(lst)
