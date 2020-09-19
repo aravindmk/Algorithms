@@ -2,7 +2,7 @@
 
 s=eval(input()) #Taking the unsorted list as input from user
 for i in range(len(s)):
-    a=i
+    a=i #Temporarily storing the index of the number in a variable
     for j in range(i+1,len(s)):
         if s[j]<s[a]:   #Checking if the number is less than every number succeeding it
             a=j
